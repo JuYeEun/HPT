@@ -16,20 +16,21 @@ public class Activity01 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity01);
 
-        EditText editText1, editText2, editText3, editText4;
+        EditText editText1, editText2, editText3, editText4,editText5;
         Button Btn3, Btn4;
 
         editText1 = (EditText) findViewById(R.id.editText1);
         editText2 = (EditText) findViewById(R.id.editText2);
         editText3 = (EditText) findViewById(R.id.editText3);
         editText4 = (EditText) findViewById(R.id.editText4);
+        editText5 = (EditText) findViewById(R.id.editText5);
         Btn3 = (Button)findViewById(R.id.Btn3);
         Btn4 = (Button)findViewById(R.id.Btn4);
 
-        String num1 = editText1.getText().toString();
-        String num2 = editText2.getText().toString();
-        String num3 = editText3.getText().toString();
-        String num4 = editText3.getText().toString();
+        String name = editText1.getText().toString();
+        String password = editText2.getText().toString();
+        String pass = editText3.getText().toString();
+        String mobile = editText3.getText().toString();
 
         Btn3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +46,7 @@ public class Activity01 extends Activity {
                 if(editText1.getText().length() == 0 || editText2.getText().length() == 0
                         || editText4.getText().length() == 0);
                 Toast.makeText(getApplicationContext(),"필수 값을 입력해주세요",Toast.LENGTH_LONG).show();
+
             }
         });
 
